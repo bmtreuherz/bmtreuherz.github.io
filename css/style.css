@@ -1,0 +1,35 @@
+.center {
+  width: 50%;
+  height: 20%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  color: white
+}
+
+body{
+  background-color: #1F1F1F;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  font-size: 60px;
+}
+p{
+  font-size: 20px;
+}
+
+/*Animations*/
+#home{
+  opacity: 0;
+  -webkit-transition: opacity 1.4s ease-in;
+         -moz-transition: opacity 1.4s ease-in;
+          -ms-transition: opacity 1.4s ease-in;
+           -o-transition: opacity 1.4s ease-in;
+              transition: opacity 1.4s ease-in;
+}
+#home.load{
+  opacity: 1;
+}

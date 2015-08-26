@@ -32,30 +32,31 @@ h1, p, img, button{
     width: 100%;
     overflow: hidden;
 }
-.vertical-align {
+
+.vertical-layout {
     display: table-cell;
     vertical-align: middle;
+    min-height: 100%;
+    position: relative;
 }
+
 .center{
+  position: relative;
   visibility: hidden;
   max-height: 0;
   text-align: center;
   color: white;
-  z-index: 1;
+  padding: 0 0 50px;
 }
 
 .footer{
-  clear: top;
- position: absolute;
- right: 0;
- bottom: 0;
- left: 0;
- padding: 1rem;
- text-align: right;
- color: white;
+  bottom: 0;
+  right :0;
+  height: 36px;
+  position: absolute;
+  text-align: right;
+  margin: 5px;
 }
-
-
 
 .headshot{
   max-width: 150px;

@@ -22,7 +22,8 @@
         <div id="home" class="center col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 fade">
           <h1>Hello!</h1>
           <p>I'm Bradley. I like making cool projects, playing music, and learning about new things!</p>
-          <button type="button" id="about-me-button" class="btn btn-default">About me</button>
+          <button type="button" id="about-from-home" class="btn btn-default">About me</button>
+          <button type="button" id="projects-from-home" class="btn btn-default">Projects</button>
         </div>
         <div id="about-me" class="center col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 fade">
           <h1>About Me</h1>
@@ -31,7 +32,29 @@
                I'm really passionate about this field and spend a lot of my freetime trying to progress
                myself by creating projects. I also play guitar and piano and love listening to and creating music.
             </p>
-          <button type="button" id="home-button" class="btn btn-default">Home</button>
+          <button type="button" id="home-from-about" class="btn btn-default">Home</button>
+          <button type="button" id="projects-from-about" class="btn btn-default">Projects</button>
+        </div>
+        <div id="projects" class="center col-xs-12  col-sm-6 col-sm-offset-3 fade">
+          <h1>Projects</h1>
+          <!-- TODO: Use swiping instead of arrows on mobile. -->
+              <table class="pager">
+                <tr>
+                  <td>
+                    <button id="project-left" class="btn btn-project"><i class="fa fa-arrow-left fa-2x"></i></button>
+                  </td>
+                  <td>
+                    <p id="current-project">This is where all the stuff about my projects is gonna go! I'm gonna type more
+                      stuff so i can get a feel what the layout will look like!
+                    </p>
+                  </td>
+                  <td>
+                    <button id="project-right" class="btn btn-project"><i class="fa fa-arrow-right fa-2x"></i></button>
+                  </td>
+                </tr>
+              </table>
+          <button type="button" id="home-from-projects" class="btn btn-default">Home</button>
+          <button type="button" id="about-from-projects" class="btn btn-default">About me</button>
         </div>
 
         <footer id="footer" class="footer fade">

@@ -46,7 +46,6 @@ h1, p, img, button{
   max-height: 0;
   text-align: center;
   color: white;
-  padding: 0 0 50px;
 }
 
 .footer{
@@ -65,6 +64,15 @@ h1, p, img, button{
   margin-bottom: 10px;
 }
 
+.btn-project, .btn-project:hover, .btn-project:active, .btn-project:focus{
+  background: none;
+  color: white;
+  outline: 0 !important;
+  border: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 /*Animations*/
 .fade{
   opacity: 0;
@@ -79,4 +87,8 @@ h1, p, img, button{
   visibility: visible;
   max-height: 100%;
   opacity: 1;
+}
+
+.center.load{
+  padding: 0 0 70px;
 }

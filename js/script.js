@@ -19,6 +19,11 @@ $(function(){
     $('#projects').addClass('load');
   })
 
+  $('#experience-from-home').click(function(){
+    $('#home').removeClass('load');
+    $('#experience').addClass('load');
+  })
+
   // Buttons on about
   $('#home-from-about').click(function(){
     $('#about-me').removeClass('load');
@@ -30,6 +35,11 @@ $(function(){
     $('#projects').addClass('load');
   })
 
+  $('#experience-from-about').click(function(){
+    $('#about-me').removeClass('load');
+    $('#experience').addClass('load');
+  })
+
   // Buttons on projects
   $('#home-from-projects').click(function(){
     $('#projects').removeClass('load');
@@ -39,5 +49,26 @@ $(function(){
   $('#about-from-projects').click(function(){
     $('#projects').removeClass('load');
     $('#about-me').addClass('load');
+  })
+
+  $('#experience-from-projects').click(function(){
+    $('#projects').removeClass('load');
+    $('#experience').addClass('load');
+  })
+
+  // Buttons on experience
+  $('#home-from-experience').click(function(){
+    $('#experience').removeClass('load');
+    $('#home').addClass('load');
+  })
+
+  $('#about-from-experience').click(function(){
+    $('#experience').removeClass('load');
+    $('#about-me').addClass('load');
+  })
+
+  $('#projects-from-experience').click(function(){
+    $('#experience').removeClass('load');
+    $('#projects').addClass('load');
   })
 });

@@ -64,6 +64,17 @@ h1, p, img, button{
   margin-bottom: 10px;
 }
 
+ #ultimate-logo{
+   max-width: 200px;
+   height: auto;
+   /*float: left;*/
+ }
+
+ .experience-item{
+   overflow: auto;
+   margin: 50px;
+ }
+
 .btn-project, .btn-project:hover, .btn-project:active, .btn-project:focus{
   background: none;
   color: white;

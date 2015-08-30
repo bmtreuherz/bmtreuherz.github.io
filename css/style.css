@@ -33,13 +33,16 @@ h1, p, img, button{
     overflow: hidden;
 }
 
-.vertical-layout {
+.vertical-center {
     display: table-cell;
     vertical-align: middle;
     min-height: 100%;
     position: relative;
 }
 
+.work-content{
+  padding: 0;
+}
 .center{
   position: relative;
   visibility: hidden;
@@ -71,11 +74,11 @@ h1, p, img, button{
  }
 
  .experience-item{
-   overflow: auto;
-   margin: 50px;
+   /*overflow: auto;*/
+   /*margin: 50px;*/
  }
 
-.btn-project, .btn-project:hover, .btn-project:active, .btn-project:focus{
+.btn-next, .btn-next:hover, .btn-next:active, .btn-next:focus{
   background: none;
   color: white;
   outline: 0 !important;

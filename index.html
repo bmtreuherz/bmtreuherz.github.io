@@ -18,28 +18,30 @@
 
   <body>
     <div class="content">
-      <div class="vertical-layout">
-        <div id="home" class="center col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 fade">
+      <div class="vertical-center">
+        <div id="home" class="center col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 fade">
           <h1>Hello!</h1>
           <p>I'm Bradley. I like making cool projects, playing music, and learning about new things!</p>
-          <button type="button" id="about-from-home" class="btn btn-default">About me</button>
-          <button type="button" id="projects-from-home" class="btn btn-default">Projects</button>
-          <button type="button" id="experience-from-home" class="btn btn-default">Experience</button>
-
+          <div class="btn-group">
+            <button type="button" id="about-from-home" class="btn btn-default">About me</button>
+            <button type="button" id="projects-from-home" class="btn btn-default">Projects</button>
+            <button type="button" id="experience-from-home" class="btn btn-default">Experience</button>
+          </div>
         </div>
-        <div id="about-me" class="center col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 fade">
+        <div id="about-me" class="center col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 fade">
           <h1>About Me</h1>
             <img class="headshot" src="img/headshot.jpg"/>
             <p>I'm 20 years old currently studying Computer Engineering at the University of Florida.
                I'm really passionate about this field and spend a lot of my freetime trying to progress
                myself by creating projects. I also play guitar and piano and love listening to and creating music.
             </p>
-          <button type="button" id="home-from-about" class="btn btn-default">Home</button>
-          <button type="button" id="projects-from-about" class="btn btn-default">Projects</button>
-          <button type="button" id="experience-from-about" class="btn btn-default">Experience</button>
-
+            <div class="btn-group">
+              <button type="button" id="home-from-about" class="btn btn-default">Home</button>
+              <button type="button" id="projects-from-about" class="btn btn-default">Projects</button>
+              <button type="button" id="experience-from-about" class="btn btn-default">Experience</button>
+            </div>
         </div>
-        <div id="projects" class="center col-xs-12  col-sm-6 col-sm-offset-3 fade">
+        <div id="projects" class="center col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 fade">
           <h1>Projects</h1>
           <!-- TODO: Use swiping instead of arrows on mobile. -->
               <table class="pager">
@@ -57,46 +59,38 @@
                   </td>
                 </tr>
               </table>
-          <button type="button" id="home-from-projects" class="btn btn-default">Home</button>
-          <button type="button" id="about-from-projects" class="btn btn-default">About me</button>
-          <button type="button" id="experience-from-projects" class="btn btn-default">Experience</button>
-
+              <div class="btn-group">
+                <button type="button" id="home-from-projects" class="btn btn-default">Home</button>
+                <button type="button" id="about-from-projects" class="btn btn-default">About me</button>
+                <button type="button" id="experience-from-projects" class="btn btn-default">Experience</button>
+              </div>
         </div>
-
-        <div id="experience" class="center col-xs-12  col-sm-6 col-sm-offset-3 fade">
+        <div id="experience" class="center col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 fade">
           <h1>Work Experience</h1>
-            <div class="experience-item">
-              <img id="ultimate-logo"src="img/UltimateSoftware.jpg"/>
-              <h2>Software Engineering Intern - Ultimate Software</h2>
-              <h3><strong>Summer 2015</strong></h3>
-              <p>
-                Developed a web application for managing a feature taxonomy.
-              </p>
+          <div class="row">
+              <div class="col-xs-2 col-md-1 btn-container" style="padding: 0px; ">
+                <button id="project-left" class="btn btn-next"><i class="fa fa-arrow-left fa-2x"></i></button>
+              </div>
+              <div class="col-xs-8 col-md-10 work-content">
+                <div class="experience-item">
+                  <img id="ultimate-logo"src="img/UltimateSoftware.jpg"/>
+                  <h2>Software Engineering Intern - Ultimate Software</h2>
+                  <h3><strong>Summer 2015</strong></h3>
+                  <p>
+                    Developed a web application for managing a feature taxonomy.
+                  </p>
+                </div>
+              </div>
+            <div class="col-xs-2 col-md-1 btn-container" style="padding: 0px;">
+              <button id="project-right" class="btn btn-next"><i class="fa fa-arrow-right fa-2x"></i></button>
             </div>
-            <div class="experience-item">
-              <img id="ultimate-logo"src="img/SpinCore.jpg"/>
-              <h2>Part-Time Engineer - SpinCore Technologies</h2>
-              <h3><strong>Fall 2014</strong></h3>
-              <p>
-                Hardware testing, sales, and customer support.
-              </p>
-            </div>
-
-            <!-- <div class="experience-item">
-              <img src=""/>
-              <h4>Software Engineering Intern - Ultimate Software</h4>
-              <strong>Summer 2015</strong>
-              <p>
-                Developed a web application for managing a feature taxonomy.
-              </p>
-            </div> -->
-
-
-          <button type="button" id="home-from-experience" class="btn btn-default">Home</button>
-          <button type="button" id="about-from-experience" class="btn btn-default">About me</button>
-          <button type="button" id="projects-from-experience" class="btn btn-default">Projects</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" id="home-from-experience" class="btn btn-default">Home</button>
+            <button type="button" id="about-from-experience" class="btn btn-default">About me</button>
+            <button type="button" id="projects-from-experience" class="btn btn-default">Projects</button>
+          </div>
         </div>
-
         <footer id="footer" class="footer fade">
             <!-- TODO: put address to pdf not word doc -->
             <a href="https://www.dropbox.com/s/u6hjgk21hjsvn62/BradleyTreuherz.Resume.docx?dl=0">

@@ -8,6 +8,12 @@ $(function(){
   // TODO: Remove tooltip on mobile
   $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 
+  // There should be a better way to do this. But since vertical margins are based on width
+  // The offset looked aweful on mobile
+  window.onresize = function(){
+    $('.btn-container').css("margin-top", $('#experience').height()/3);
+  }
+
   // Buttons on home
   $('#about-from-home').click(function(){
     $('#home').removeClass('load');
@@ -22,8 +28,8 @@ $(function(){
   $('#experience-from-home').click(function(){
     $('#home').removeClass('load');
     $('#experience').addClass('load');
+    $('.btn-container').css("margin-top", $('#experience').height()/3);
   })
-
   // Buttons on about
   $('#home-from-about').click(function(){
     $('#about-me').removeClass('load');
@@ -38,6 +44,7 @@ $(function(){
   $('#experience-from-about').click(function(){
     $('#about-me').removeClass('load');
     $('#experience').addClass('load');
+    $('.btn-container').css("margin-top", $('#experience').height()/3);
   })
 
   // Buttons on projects
@@ -54,6 +61,7 @@ $(function(){
   $('#experience-from-projects').click(function(){
     $('#projects').removeClass('load');
     $('#experience').addClass('load');
+    $('.btn-container').css("margin-top", $('#experience').height()/3);
   })
 
   // Buttons on experience

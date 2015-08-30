@@ -67,15 +67,14 @@ h1, p, img, button{
   margin-bottom: 10px;
 }
 
- #ultimate-logo{
+ #ultimate-logo, #spinCore-logo{
    max-width: 200px;
    height: auto;
-   /*float: left;*/
  }
 
  .experience-item{
-   /*overflow: auto;*/
-   /*margin: 50px;*/
+   max-height: 0;
+   visibility: hidden;
  }
 
 .btn-next, .btn-next:hover, .btn-next:active, .btn-next:focus{

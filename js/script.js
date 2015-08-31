@@ -67,6 +67,20 @@ $(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
   }
 
+  // Setup swipe events
+  $('#projects').on("swiperight", function(){
+    changeProjects(false);
+  })
+  $('#projects').on("swipeleft", function(){
+    changeProjects(true);
+  })
+  $('#experience').on("swiperight", function(){
+    changeExperience(false);
+  })
+  $('#experience').on("swipeleft", function(){
+    changeProjects(true);
+  })
+
   // There should be a better way to do this. But since vertical margins are based on width
   // The offset looked aweful on mobile
   window.onresize = function(){

@@ -67,18 +67,20 @@ $(function(){
     $('[data-toggle="tooltip"]').tooltip({container: 'body'});
   }
 
-  // Setup swipe events
-  $('#projects').on("swiperight", function(){
-    changeProjects(false);
+  $(document).on("swiperight", function(){
+    if($('#projects').hasClass("load")){
+      changeProjects(false);
+    } else if($('#experience').hasClass("load")){
+      changeExperience(false);
+    }
   })
-  $('#projects').on("swipeleft", function(){
-    changeProjects(true);
-  })
-  $('#experience').on("swiperight", function(){
-    changeExperience(false);
-  })
-  $('#experience').on("swipeleft", function(){
-    changeExperience(true);
+
+  $(document).on("swipeleft", function(){
+    if($('#projects').hasClass("load")){
+      changeProjects(true);
+    } else if($('#experience').hasClass("load")){
+      changeExperience(true);
+    }
   })
 
   // There should be a better way to do this. But since vertical margins are based on width

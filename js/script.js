@@ -37,6 +37,7 @@ $(function(){
     $('#' + workExperience[currentExperience]).removeClass('load');
     currentExperience = tempItem;
     $('#' + workExperience[currentExperience]).addClass('load');
+    $('.exp-btn').css("margin-top", $('#experience').height() * 2/5);
   }
 
   var changeProjects = function(increment){
@@ -55,6 +56,7 @@ $(function(){
     $('#' + projects[currentProject]).removeClass('load');
     currentProject = tempItem;
     $('#' + projects[currentProject]).addClass('load');
+    $('.proj-btn').css("margin-top", $('#projects').height() * 2/5);
   }
 
 

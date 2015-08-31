@@ -47,21 +47,56 @@
         <div id="projects" class="center col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 fade">
           <h1>Projects</h1>
           <!-- TODO: Use swiping instead of arrows on mobile. -->
-              <table class="pager">
-                <tr>
-                  <td>
-                    <button id="project-left" class="btn btn-next"><i class="fa fa-arrow-left fa-2x"></i></button>
-                  </td>
-                  <td>
-                    <p id="current-project">This is where all the stuff about my projects is gonna go! I'm gonna type more
-                      stuff so i can get a feel what the layout will look like!
-                    </p>
-                  </td>
-                  <td>
-                    <button id="project-right" class="btn btn-next"><i class="fa fa-arrow-right fa-2x"></i></button>
-                  </td>
-                </tr>
-              </table>
+          <div class="row">
+              <div class="col-xs-2 col-md-1 btn-container proj-btn" style="padding: 0px; ">
+                <button id="projects-left" class="btn btn-next"><i class="fa fa-arrow-left fa-2x"></i></button>
+              </div>
+              <div class="col-xs-8 col-md-10 projects-content">
+                <div id="talkToMe" class="projects-item fade">
+                  <h2>Talk to me!</h2>
+                  <img id="talkToMeImage" class="proj-img"src="img/talkToMe.jpg"/>
+                  <h4><strong><a href="http://bmtreuherz_chat_app.meteor.com/">Link</a>   <a href="https://github.com/bmtreuherz/chat-app">Repo</a></strong></h4>
+                  <p>
+                    Talk to me is a web based chat application written with Meteor.js.
+                    The application allows users to join or create a chat room and talk to other users.
+                  </p>
+                </div>
+                <div id="bluetoothCar" class="projects-item fade">
+                  <h2>Bluetooth Car</h2>
+                  <img id="bluetoothCarImage" class="proj-img" src="img/bluetoothCar.jpg"/>
+                  <h4><strong><a href="https://github.com/bmtreuherz/BluetoothCar">Repo</a></strong></h4>
+                  <p>
+                    I purchased a cheap RC car and stripped it down to just the chassis and two motors. With an Arduino Uno,
+                    bluetooth chip (HC-06), and a motor driver board, the car now receives instructions via bluetooth from
+                    an Android app I created.
+                  </p>
+                </div>
+                <div id="brickbreaker" class="projects-item fade">
+                  <h2>Brickbreaker Clone</h2>
+                  <img id="brickbreakerImage"src="img/brickbreaker.jpg"/>
+                  <h4><strong><a href="https://github.com/bmtreuherz/Brickbreaker">Repo</a></strong></h4>
+                  <p>
+                    This game was one of the first projects I ever worked on. It is a brickbreaker clone written in Python using
+                    Pygame. After completing the game and running it as a desktop application, with a few small modifications
+                    and the use of the Pygame Subset for Android, I ported the game to run on Android.
+                  </p>
+                </div>
+                <div id="zone" class="projects-item fade">
+                  <h2>Zone</h2>
+                  <img id="zoneImage" class="proj-img" src="img/zone.jpg"/>
+                  <h4><strong><a href="https://github.com/bmtreuherz/COP3503_Project">Repo</a></strong></h4>
+                  <p>
+                    This project is a game based off of Ramiro Corbetta's Hokra. It was written in C++ using SDL 2 by myself and a team of students
+                    from one of my courses. The objective of the game is to capture a ball and hold it in your team's zone as long as possible.
+                    A meter fills up whenever the ball is in your zone and the first team to fill the meter wins.
+                  </p>
+                </div>
+              </div>
+
+            <div class="col-xs-2 col-md-1 btn-container proj-btn" style="padding: 0px;">
+              <button id="projects-right" class="btn btn-next"><i class="fa fa-arrow-right fa-2x"></i></button>
+            </div>
+          </div>
               <div class="btn-group">
                 <button type="button" id="home-from-projects" class="btn btn-default">Home</button>
                 <button type="button" id="about-from-projects" class="btn btn-default">About me</button>
@@ -71,7 +106,7 @@
         <div id="experience" class="center col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 fade">
           <h1>Work</h1>
           <div class="row">
-              <div class="col-xs-2 col-md-1 btn-container" style="padding: 0px; ">
+              <div class="col-xs-2 col-md-1 btn-container exp-btn" style="padding: 0px; ">
                 <button id="experience-left" class="btn btn-next"><i class="fa fa-arrow-left fa-2x"></i></button>
               </div>
               <div class="col-xs-8 col-md-10 work-content">
@@ -80,7 +115,7 @@
                   <h3>Software Engineering Intern - Ultimate Software</h3>
                   <h4><strong>Summer 2015</strong></h4>
                   <p>
-                    Web app development.
+                    Developed a web application for managing product features.
                   </p>
                 </div>
                 <div id="spinCore" class="experience-item fade">
@@ -93,7 +128,7 @@
                 </div>
               </div>
 
-            <div class="col-xs-2 col-md-1 btn-container" style="padding: 0px;">
+            <div class="col-xs-2 col-md-1 btn-container exp-btn" style="padding: 0px;">
               <button id="experience-right" class="btn btn-next"><i class="fa fa-arrow-right fa-2x"></i></button>
             </div>
           </div>

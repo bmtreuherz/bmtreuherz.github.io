@@ -21,7 +21,7 @@ i{
   cursor: pointer;
 }
 
-h1, p, img, button{
+h1, h2, h4, p, img, button{
   max-height: inherit;
 }
 
@@ -40,7 +40,7 @@ h1, p, img, button{
     position: relative;
 }
 
-.work-content{
+.work-content, .projects-content{
   padding: 0;
 }
 .center{
@@ -67,15 +67,34 @@ h1, p, img, button{
   margin-bottom: 10px;
 }
 
- #ultimate-logo, #spinCore-logo{
+ #ultimate-logo, #spinCore-logo {
    max-width: 200px;
    height: auto;
  }
 
- .experience-item{
+ .proj-img {
+   max-width: 350px;
+   height: auto;
+ }
+
+ #brickbreakerImage{
+   max-width: 200px;
+   height: auto;
+ }
+
+ .experience-item, .projects-item{
    max-height: 0;
    visibility: hidden;
  }
+
+ .projects-item:not(.load) h1,  .projects-item:not(.load) h2,  .projects-item:not(.load) h4, .projects-item:not(.load) p,
+ .experience-item:not(.load) h1,  .experience-item:not(.load) h2,  .experience-item:not(.load) h4, .experience-item:not(.load) p{
+   margin: 0;
+ }
+
+
+
+
 
 .btn-next, .btn-next:hover, .btn-next:active, .btn-next:focus{
   background: none;

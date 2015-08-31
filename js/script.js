@@ -78,7 +78,7 @@ $(function(){
     changeExperience(false);
   })
   $('#experience').on("swipeleft", function(){
-    changeProjects(true);
+    changeExperience(true);
   })
 
   // There should be a better way to do this. But since vertical margins are based on width

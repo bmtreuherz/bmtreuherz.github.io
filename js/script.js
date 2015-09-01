@@ -34,10 +34,17 @@ $(function(){
         tempItem = workExperience.length - 1;
       }
     }
-    $('#' + workExperience[currentExperience]).removeClass('load');
-    currentExperience = tempItem;
-    $('#' + workExperience[currentExperience]).addClass('load');
-    $('.exp-btn').css("margin-top", $('#experience').height() * 2/5);
+
+    $('.exp-btn').fadeOut("fast", function(){
+      var left = $(".experience-left").hide();
+      var right = $('.experience-right').hide();
+      $('#' + workExperience[currentExperience]).removeClass('load');
+      currentExperience = tempItem;
+      $('#' + workExperience[currentExperience]).addClass('load');
+      $(this).replaceWith([left, right]);
+      $('.exp-btn').css("margin-top", $('#experience').height() * 2/5);
+      $('.exp-btn').fadeIn("slow");
+    })
   }
 
   var changeProjects = function(increment){
@@ -53,12 +60,18 @@ $(function(){
         tempItem = projects.length - 1;
       }
     }
-    $('#' + projects[currentProject]).removeClass('load');
-    currentProject = tempItem;
-    $('#' + projects[currentProject]).addClass('load');
-    $('.proj-btn').css("margin-top", $('#projects').height() * 2/5);
-  }
 
+    $('.proj-btn').fadeOut("fast", function(){
+      var left = $(".projects-left").hide();
+      var right = $('.projects-right').hide();
+      $('#' + projects[currentProject]).removeClass('load');
+      currentProject = tempItem;
+      $('#' + projects[currentProject]).addClass('load');
+      $(this).replaceWith([left, right]);
+      $('.proj-btn').css("margin-top", $('#projects').height() * 2/5);
+      $('.proj-btn').fadeIn("slow");
+    })
+  }
 
   // Begin transitions
   $('#home').addClass("load");

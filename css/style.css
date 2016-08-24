@@ -77,7 +77,7 @@ h1, h2, h4, p, img, button{
    height: auto;
  }
 
- #brickbreakerImage{
+ #brickbreakerImage, #headsUpImage{
    max-width: 200px;
    height: auto;
  }

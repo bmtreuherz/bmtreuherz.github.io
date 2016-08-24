@@ -3,7 +3,7 @@ $(function(){
   var workExperience = ["microsoft", "ultimateSoftware", "spinCore"];
   var currentExperience = 0;
 
-  var projects = ["talkToMe", "bluetoothCar", "brickbreaker", "zone"];
+  var projects = ["headsUp", "honeyImHome", "talkToMe", "bluetoothCar", "brickbreaker", "zone"];
   var currentProject = 0;
 
   // Determine if the user is on mobile

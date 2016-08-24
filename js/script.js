@@ -1,6 +1,6 @@
 // invoked on page load
 $(function(){
-  var workExperience = ["ultimateSoftware", "spinCore"];
+  var workExperience = ["microsoft", "ultimateSoftware", "spinCore"];
   var currentExperience = 0;
 
   var projects = ["talkToMe", "bluetoothCar", "brickbreaker", "zone"];

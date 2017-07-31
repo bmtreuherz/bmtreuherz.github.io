@@ -1,9 +1,9 @@
 // invoked on page load
 $(function(){
-  var workExperience = ["microsoft", "ultimateSoftware", "spinCore"];
+  var workExperience = ["microsoft2", "spaceX", "microsoft", "ultimateSoftware", "spinCore"];
   var currentExperience = 0;
 
-  var projects = ["headsUp", "honeyImHome", "talkToMe", "bluetoothCar", "brickbreaker", "zone"];
+  var projects = ["jackpotLottery", "headsUp", "honeyImHome", "talkToMe", "bluetoothCar", "brickbreaker", "zone"];
   var currentProject = 0;
 
   // Determine if the user is on mobile
